@@ -59,7 +59,8 @@
         }
       ],
       "react",
-      "stage-0"
+      "stage-0",
+      "flow"
     ],
     "env": {
       "production": {
@@ -232,14 +233,17 @@
     "redux": "3.6.0",
     "redux-immutable": "3.0.8",
     "redux-saga": "0.14.0",
+    "require-from-string": "^1.2.1",
     "reselect": "2.5.4",
     "sanitize.css": "4.1.0",
     "styled-components": "1.1.2",
+    "styled-components-tachyons": "0.0.4",
     "warning": "3.0.0",
+    "web3": "^0.19.1",
     "whatwg-fetch": "2.0.1"
   },
   "devDependencies": {
-    "babel-cli": "6.18.0",
+    "babel-cli": "^6.24.1",
     "babel-core": "6.21.0",
     "babel-eslint": "7.1.1",
     "babel-loader": "6.2.10",
@@ -250,6 +254,7 @@
     "babel-plugin-transform-react-constant-elements": "6.9.1",
     "babel-plugin-transform-react-inline-elements": "6.8.0",
     "babel-plugin-transform-react-remove-prop-types": "0.2.11",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-latest": "6.16.0",
     "babel-preset-react": "6.16.0",
     "babel-preset-react-hmre": "1.1.1",
@@ -270,6 +275,7 @@
     "eventsource-polyfill": "0.9.6",
     "exports-loader": "0.6.3",
     "file-loader": "0.9.0",
+    "flow-bin": "^0.48.0",
     "html-loader": "0.4.4",
     "html-webpack-plugin": "2.24.1",
     "image-webpack-loader": "2.0.0",
@@ -286,8 +292,10 @@
     "rimraf": "2.5.4",
     "shelljs": "0.7.5",
     "sinon": "2.0.0-pre",
+    "solc-loader": "^1.1.1",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
+    "web3-loader": "^1.1.2",
     "webpack": "2.2.0-rc.3",
     "webpack-dev-middleware": "1.9.0",
     "webpack-hot-middleware": "2.15.0"

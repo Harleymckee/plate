@@ -11,6 +11,7 @@ module.exports = (options) => ({
     path: path.resolve(process.cwd(), 'build'),
     publicPath: '/',
   }, options.output), // Merge with env dependent settings
+  target: 'node',
   module: {
     loaders: [{
       test: /\.js$/, // Transform all .js files required somewhere with Babel
@@ -58,7 +59,15 @@ module.exports = (options) => ({
       query: {
         limit: 10000,
       },
+    },
+    {
+      test: /\.sol$/,
+      loaders: ['web3-loader', 'solc-loader'],
     }],
+  },
+  node: {
+    fs: 'empty',
+    module: 'empty',
   },
   plugins: options.plugins.concat([
     new webpack.ProvidePlugin({
